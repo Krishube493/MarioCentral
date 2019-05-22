@@ -12,6 +12,20 @@ namespace Mario
 {
     public partial class GameScreen : UserControl
     {
+        #region Global Variables
+
+        //Lists
+        List<Platform> Platforms = new List<Platform>();
+        List<Enemies> Enemies = new List<Enemies>();
+        List<PowerupBoxes> Powerups = new List<PowerupBoxes>();
+
+        //Brushes
+
+        //Player One Controls 
+        Boolean leftArrowDown, rightArrowDown, spaceDown, upArrowDown, downArrowDown;
+        public int lives = 5;
+
+        #endregion
         public GameScreen()
         {
             InitializeComponent();
@@ -25,6 +39,10 @@ namespace Mario
         private void GameScreen_Paint(object sender, PaintEventArgs e)
         {
             //create the ground 
+            foreach (Platform p in Platforms)
+            {
+
+            }
 
             //create the enemies 
 
