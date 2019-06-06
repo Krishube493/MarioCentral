@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<level>
+
+  <!--This is the Enemies -->
+
+  <object>
+
+    <name>enemy</name>
+
+    <x>500</x>
+
+    <y>295</y>
+
+  </object>
+
+  <object>
+
+    <name>enemy</name>
+
+    <x>250</x>
+
+    <y>295</y>
+
+  </object>
+
+  <object>
+
+    <name>enemy</name>
+
+    <x>750</x>
+
+    <y>295</y>
+
+  </object>
+
+  <!--This is the Powerups -->
+
+  <object>
+
+    <name>powerup</name>
+
+    <x>150</x>
+
+    <y>205</y>
+
+  </object>
+
+  <!--This is the Platforms -->
+
+  <object>
+
+    <name>platform</name>
+
+    <x>0</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>30</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>60</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>90</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>120</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>150</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>180</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>210</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>240</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>270</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>300</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>330</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>360</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>390</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>420</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>450</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>480</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>510</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>540</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>570</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>600</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>630</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>660</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>690</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>720</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>750</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>780</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>810</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>840</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>870</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>900</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>930</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>960</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>990</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>1020</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>1050</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>1080</x>
+
+    <y>330</y>
+
+  </object>
+
+  <object>
+
+    <name>platform</name>
+
+    <x>1110</x>
+
+    <y>330</y>
+
+  </object>
+
+</level>

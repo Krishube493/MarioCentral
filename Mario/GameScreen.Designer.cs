@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.livesLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // gameTimer
@@ -38,19 +39,35 @@
             this.gameTimer.Interval = 20;
             this.gameTimer.Tick += new System.EventHandler(this.GameTimer_Tick);
             // 
+            // livesLabel
+            // 
+            this.livesLabel.AutoSize = true;
+            this.livesLabel.Location = new System.Drawing.Point(1396, 21);
+            this.livesLabel.Name = "livesLabel";
+            this.livesLabel.Size = new System.Drawing.Size(41, 17);
+            this.livesLabel.TabIndex = 1;
+            this.livesLabel.Text = "Lives";
+            // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.livesLabel);
+            this.DoubleBuffered = true;
             this.Name = "GameScreen";
-            this.Size = new System.Drawing.Size(419, 418);
+            this.Size = new System.Drawing.Size(1500, 450);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.GameScreen_Paint);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GameScreen_KeyUp);
+            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.GameScreen_PreviewKeyDown);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.Label livesLabel;
     }
 }

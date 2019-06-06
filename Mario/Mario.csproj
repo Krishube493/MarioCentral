@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ending.cs" />
     <Compile Include="Enemies.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -59,12 +60,24 @@
     <Compile Include="GameScreen.Designer.cs">
       <DependentUpon>GameScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuScreen.Designer.cs">
+      <DependentUpon>MenuScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Platform.cs" />
     <Compile Include="PowerupBoxes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameScreen.resx">
       <DependentUpon>GameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuScreen.resx">
+      <DependentUpon>MenuScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,10 +139,37 @@
     <None Include="Resources\Standing.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Turned.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Tunnel.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Turned.png" />
+    <None Include="Resources\Mario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mario2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
