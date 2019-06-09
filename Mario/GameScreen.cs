@@ -14,7 +14,7 @@ namespace Mario
 {
     public partial class GameScreen : UserControl
     {
-        //ADD SOUNDS, ADD ? BOXES, more levels if time, JUMP
+        //ADD SOUNDS, more levels if time.
         #region Global Variables
 
         //Lists
@@ -82,12 +82,33 @@ namespace Mario
                 }
             }
 
-            //TODO POWERUP COLLISION
-            
+            //powerups collision
+            foreach (PowerupBoxes b in Powerups)
+            {
+                if (PowerupBoxes.PowerupsCollision(b) == true)
+                {
+                    lives++;
+                    Powerups.Remove(b);
+                    break;
+                }
+            }
 
             if (lives == 0)
             {
-                //TODO go to game over screen 
+                //go to game over screen 
+                Reset();
+                //Remove this screen 
+                gameTimer.Enabled = false;
+                Form f = this.FindForm();
+                f.Controls.Remove(value: this);
+
+                //Move Drectly to Game Screen 
+                GameOverScreen os = new GameOverScreen();
+                f.Controls.Add(os);
+
+                //put into the middle of the screen
+                os.Location = new Point((f.Width - os.Width) / 2, (f.Height - os.Height) / 2);
+                os.Focus();
             }
 
             foreach (Ending q in End)
@@ -103,7 +124,20 @@ namespace Mario
                     }
                     else
                     {
-                        //TODO go to win screen
+                        //go to win screen
+                        Reset();
+                        //Remove this screen 
+                        gameTimer.Enabled = false;
+                        Form f = this.FindForm();
+                        f.Controls.Remove(value: this);
+
+                        //Move Drectly to Game Screen 
+                        WinScreen ws = new WinScreen();
+                        f.Controls.Add(ws);
+
+                        //put into the middle of the screen
+                        ws.Location = new Point((f.Width - ws.Width) / 2, (f.Height - ws.Height) / 2);
+                        ws.Focus();
                     }
                 }
             }
@@ -175,6 +209,19 @@ namespace Mario
                 jumpActivated = false;
                 jumpNumber = 1;
             }
+        }
+
+        public void Reset()
+        {
+            playerX = 20;
+            playerY = 275;
+            playerW = 40;
+            playerH = 55;
+            level = 1;
+            lives = 5;
+            playerImage = 1;
+            enemyImage = 1;
+            jumpNumber = 1;
         }
 
         public void PlayerImageChange()
