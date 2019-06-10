@@ -134,7 +134,7 @@ namespace Mario
             {
                 if (Ending.EndingCollision(q) == true)
                 {
-                    if (level == 1 || level == 2 || level == 3) // add more levels here
+                    if (level == 1 || level == 2 || level == 3 || level == 4)
                     {
                         level += 1;
                         playerX = 20;

@@ -148,11 +148,13 @@ namespace Mario.Properties {
         ///
         ///  &lt;/object&gt;
         ///
-        ///  &lt;!--This is the Platforms --&gt;
-        ///
         ///  &lt;object&gt;
         ///
-        ///    &lt;name&gt;platform&lt;/name&gt;        /// [rest of string was truncated]&quot;;.
+        ///    &lt;name&gt;powerup&lt;/name&gt;
+        ///
+        ///    &lt;x&gt;950&lt;/x&gt;
+        ///
+        ///    &lt;y&gt;205&lt;/y&gt;        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Level1 {
             get {
@@ -171,17 +173,17 @@ namespace Mario.Properties {
         ///
         ///    &lt;name&gt;enemy&lt;/name&gt;
         ///
-        ///    &lt;x&gt;500&lt;/x&gt;
+        ///    &lt;x&gt;250&lt;/x&gt;
         ///
         ///    &lt;y&gt;295&lt;/y&gt;
         ///
         ///  &lt;/object&gt;
-        ///
+        ///  
         ///  &lt;object&gt;
         ///
         ///    &lt;name&gt;enemy&lt;/name&gt;
         ///
-        ///    &lt;x&gt;250&lt;/x&gt;
+        ///    &lt;x&gt;500&lt;/x&gt;
         ///
         ///    &lt;y&gt;295&lt;/y&gt;
         ///
@@ -209,7 +211,7 @@ namespace Mario.Properties {
         ///
         ///  &lt;/object&gt;
         ///
-        ///  &lt;!--This is the Platfor [rest of string was truncated]&quot;;.
+        ///  &lt;!--This is the Platf [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Level2 {
             get {
@@ -287,7 +289,67 @@ namespace Mario.Properties {
         ///
         ///    &lt;name&gt;enemy&lt;/name&gt;
         ///
+        ///    &lt;x&gt;150&lt;/x&gt;
+        ///
+        ///    &lt;y&gt;295&lt;/y&gt;
+        ///
+        ///  &lt;/object&gt;
+        ///  
+        ///  &lt;object&gt;
+        ///
+        ///    &lt;name&gt;enemy&lt;/name&gt;
+        ///
+        ///    &lt;x&gt;250&lt;/x&gt;
+        ///
+        ///    &lt;y&gt;295&lt;/y&gt;
+        ///
+        ///  &lt;/object&gt;
+        ///  
+        ///  &lt;object&gt;
+        ///
+        ///    &lt;name&gt;enemy&lt;/name&gt;
+        ///
         ///    &lt;x&gt;500&lt;/x&gt;
+        ///
+        ///    &lt;y&gt;295&lt;/y&gt;
+        ///
+        ///  &lt;/object&gt;
+        ///
+        ///  &lt;object&gt;
+        ///
+        ///    &lt;name&gt;enemy&lt;/name&gt;
+        ///
+        ///    &lt;x&gt;655&lt;/x&gt;
+        ///
+        ///    &lt;y&gt;295&lt;/y&gt;
+        ///
+        ///  &lt;/object&gt;
+        ///   
+        ///
+        ///  &lt;object&gt;
+        ///
+        ///    &lt;name&gt;enemy&lt;/name&gt;
+        ///
+        ///    &lt;x&gt;750&lt;/ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Level4 {
+            get {
+                return ResourceManager.GetString("Level4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///
+        ///&lt;level&gt;
+        ///
+        ///  &lt;!--This is the Enemies --&gt;
+        ///
+        ///  &lt;object&gt;
+        ///
+        ///    &lt;name&gt;enemy&lt;/name&gt;
+        ///
+        ///    &lt;x&gt;150&lt;/x&gt;
         ///
         ///    &lt;y&gt;295&lt;/y&gt;
         ///
@@ -302,22 +364,12 @@ namespace Mario.Properties {
         ///    &lt;y&gt;295&lt;/y&gt;
         ///
         ///  &lt;/object&gt;
-        ///  
-        ///  &lt;object&gt;
-        ///
-        ///  &lt;name&gt;enemy&lt;/name&gt;
-        ///
-        ///  &lt;x&gt;150&lt;/x&gt;
-        ///
-        ///  &lt;y&gt;295&lt;/y&gt;
-        ///
-        ///  &lt;/object&gt;
         ///
         ///  &lt;object&gt;
         ///
         ///    &lt;name&gt;enemy&lt;/name&gt;
         ///
-        ///    &lt;x&gt;750&lt;/x&gt;
+        ///    &lt;x&gt;500&lt;/x&gt;
         ///
         ///    &lt;y&gt;295&lt;/y&gt;
         ///
@@ -327,13 +379,24 @@ namespace Mario.Properties {
         ///
         ///    &lt;name&gt;enemy&lt;/name&gt;
         ///
-        ///    &lt;x&gt;900&lt;/x&gt;
+        ///    &lt;x&gt;655&lt;/x&gt;
         ///
-        ///    &lt;y&gt; [rest of string was truncated]&quot;;.
+        ///    &lt;y&gt;295&lt;/y&gt;
+        ///
+        ///  &lt;/object&gt;
+        ///
+        ///
+        ///  &lt;object&gt;
+        ///
+        ///    &lt;name&gt;enemy&lt;/name&gt;
+        ///
+        ///    &lt;x&gt;750&lt;/x&gt;
+        ///
+        ///  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Level4 {
+        internal static string Level5 {
             get {
-                return ResourceManager.GetString("Level4", resourceCulture);
+                return ResourceManager.GetString("Level5", resourceCulture);
             }
         }
         

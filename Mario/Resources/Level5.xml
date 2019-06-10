@@ -8,12 +8,32 @@
 
     <name>enemy</name>
 
+    <x>150</x>
+
+    <y>295</y>
+
+  </object>
+
+  <object>
+
+    <name>enemy</name>
+
     <x>250</x>
 
     <y>295</y>
 
   </object>
-  
+
+  <object>
+
+    <name>enemy</name>
+
+    <x>375</x>
+
+    <y>295</y>
+
+  </object>
+
   <object>
 
     <name>enemy</name>
@@ -28,21 +48,50 @@
 
     <name>enemy</name>
 
+    <x>655</x>
+
+    <y>295</y>
+
+  </object>
+
+
+  <object>
+
+    <name>enemy</name>
+
     <x>750</x>
 
     <y>295</y>
 
   </object>
 
-  <!--This is the Powerups -->
+  <object>
+
+    <name>enemy</name>
+
+    <x>800</x>
+
+    <y>295</y>
+
+  </object>
 
   <object>
 
-    <name>powerup</name>
+    <name>enemy</name>
 
-    <x>150</x>
+    <x>900</x>
 
-    <y>205</y>
+    <y>295</y>
+
+  </object>
+
+  <object>
+
+    <name>enemy</name>
+
+    <x>1000</x>
+
+    <y>295</y>
 
   </object>
 
