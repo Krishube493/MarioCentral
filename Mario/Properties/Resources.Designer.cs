@@ -61,6 +61,24 @@ namespace Mario.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Background {
+            get {
+                return ResourceManager.GetStream("Background", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream DeathSound {
+            get {
+                return ResourceManager.GetStream("DeathSound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Enemy1 {
@@ -77,6 +95,15 @@ namespace Mario.Properties {
             get {
                 object obj = ResourceManager.GetObject("Enemy2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Jump {
+            get {
+                return ResourceManager.GetStream("Jump", resourceCulture);
             }
         }
         

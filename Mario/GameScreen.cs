@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Threading;
+using System.Media;
 
 namespace Mario
 {
     public partial class GameScreen : UserControl
     {
-        //ADD SOUNDS, more levels if time.
         #region Global Variables
 
         //Lists
@@ -36,6 +36,13 @@ namespace Mario
         public int playerImage = 1;
         public int enemyImage = 1;
 
+        //sounds
+        SoundPlayer backgroundSound = new SoundPlayer(Properties.Resources.Background);
+        SoundPlayer deathSound = new SoundPlayer(Properties.Resources.DeathSound);
+        SoundPlayer jumpSound = new SoundPlayer(Properties.Resources.Jump);
+        //player.Play();
+
+
         //jump controls 
         public int jumpNumber = 1;
         Boolean jumpActivated = false;
@@ -45,11 +52,14 @@ namespace Mario
         public GameScreen()
         {
             InitializeComponent();
+            //Play sound
+            backgroundSound.PlayLooping();
             LoadLevel();
         }
 
         private void GameTimer_Tick(object sender, EventArgs e)
         {
+
             if (rightArrowDown == true && jumpActivated == false)
             {
                 playerX += 10;
@@ -95,6 +105,8 @@ namespace Mario
 
             if (lives == 0)
             {
+                //play sound 
+                deathSound.Play();
                 //go to game over screen 
                 Reset();
                 //Remove this screen 
@@ -126,6 +138,8 @@ namespace Mario
                     {
                         //go to win screen
                         Reset();
+                        //stop sound 
+                        backgroundSound.Stop();
                         //Remove this screen 
                         gameTimer.Enabled = false;
                         Form f = this.FindForm();
@@ -151,6 +165,7 @@ namespace Mario
         {
             if (jumpNumber == 1)
             {
+                jumpSound.Play();
                 playerY -= 20;
                 playerX += 24;
 
@@ -203,6 +218,9 @@ namespace Mario
             {
                 playerY = 275;
                 playerX += 24;
+
+                //Play sound
+                backgroundSound.PlayLooping();
 
                 upArrowDown = false;
                 spaceDown = false;
