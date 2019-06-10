@@ -25,14 +25,18 @@ namespace Mario
 
         //Player One Controls 
         Boolean rightArrowDown, spaceDown, upArrowDown, leftArrowDown;
+
+        //player one starting position
         public static int playerX = 20;
         public static int playerY = 275;
         public static int playerW = 40;
         public static int playerH = 55;
 
+        //level and lives
         public static int level = 1;
         public static int lives = 5;
 
+        //image variables to change the player and enemys
         public int playerImage = 1;
         public int enemyImage = 1;
 
@@ -40,8 +44,6 @@ namespace Mario
         SoundPlayer backgroundSound = new SoundPlayer(Properties.Resources.Background);
         SoundPlayer deathSound = new SoundPlayer(Properties.Resources.DeathSound);
         SoundPlayer jumpSound = new SoundPlayer(Properties.Resources.Jump);
-        //player.Play();
-
 
         //jump controls 
         public int jumpNumber = 1;
@@ -59,24 +61,27 @@ namespace Mario
 
         private void GameTimer_Tick(object sender, EventArgs e)
         {
-
+            //to change player image and to more right
             if (rightArrowDown == true && jumpActivated == false)
             {
                 playerX += 10;
                 PlayerImageChange();
             }
 
+            //to jump
             if (upArrowDown == true || spaceDown == true)
             {
                 Jump();
             }
 
+            //to change player image and to more left
             if (leftArrowDown == true && jumpActivated == false)
             {
                 playerX -= 10;
                 PlayerImageChange();
             }
 
+            //enemy collision
             foreach (Enemies n in Enemy)
             {
                 if (Enemies.EnemiesCollision(n) == "Right" || Enemies.EnemiesCollision(n) == "Left")
@@ -103,6 +108,7 @@ namespace Mario
                 }
             }
 
+            //death
             if (lives == 0)
             {
                 //play sound 
@@ -123,11 +129,12 @@ namespace Mario
                 os.Focus();
             }
 
+            //to switch levels or go to win screen
             foreach (Ending q in End)
             {
                 if (Ending.EndingCollision(q) == true)
                 {
-                    if (level == 1 || level == 2)
+                    if (level == 1 || level == 2 || level == 3) // add more levels here
                     {
                         level += 1;
                         playerX = 20;

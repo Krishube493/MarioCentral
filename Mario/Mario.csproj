@@ -198,5 +198,10 @@
   <ItemGroup>
     <None Include="Resources\DeathSound.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level4.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
