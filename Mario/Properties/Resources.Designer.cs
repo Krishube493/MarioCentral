@@ -70,6 +70,26 @@ namespace Mario.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cloud {
+            get {
+                object obj = ResourceManager.GetObject("cloud", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clouds {
+            get {
+                object obj = ResourceManager.GetObject("clouds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream DeathSound {
@@ -94,6 +114,16 @@ namespace Mario.Properties {
         internal static System.Drawing.Bitmap Enemy2 {
             get {
                 object obj = ResourceManager.GetObject("Enemy2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FlowerOpen {
+            get {
+                object obj = ResourceManager.GetObject("FlowerOpen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -230,17 +260,17 @@ namespace Mario.Properties {
         ///
         ///    &lt;name&gt;enemy&lt;/name&gt;
         ///
-        ///    &lt;x&gt;500&lt;/x&gt;
+        ///    &lt;x&gt;250&lt;/x&gt;
         ///
         ///    &lt;y&gt;295&lt;/y&gt;
         ///
         ///  &lt;/object&gt;
-        ///
+        ///  
         ///  &lt;object&gt;
         ///
         ///    &lt;name&gt;enemy&lt;/name&gt;
         ///
-        ///    &lt;x&gt;250&lt;/x&gt;
+        ///    &lt;x&gt;500&lt;/x&gt;
         ///
         ///    &lt;y&gt;295&lt;/y&gt;
         ///
@@ -270,7 +300,7 @@ namespace Mario.Properties {
         ///
         ///  &lt;object&gt;
         ///
-        ///    &lt;name&gt;pl [rest of string was truncated]&quot;;.
+        ///    &lt;name&gt; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Level3 {
             get {
@@ -369,6 +399,16 @@ namespace Mario.Properties {
         ///
         ///    &lt;name&gt;enemy&lt;/name&gt;
         ///
+        ///    &lt;x&gt;375&lt;/x&gt;
+        ///
+        ///    &lt;y&gt;295&lt;/y&gt;
+        ///
+        ///  &lt;/object&gt;
+        ///
+        ///  &lt;object&gt;
+        ///
+        ///    &lt;name&gt;enemy&lt;/name&gt;
+        ///
         ///    &lt;x&gt;500&lt;/x&gt;
         ///
         ///    &lt;y&gt;295&lt;/y&gt;
@@ -381,18 +421,7 @@ namespace Mario.Properties {
         ///
         ///    &lt;x&gt;655&lt;/x&gt;
         ///
-        ///    &lt;y&gt;295&lt;/y&gt;
-        ///
-        ///  &lt;/object&gt;
-        ///
-        ///
-        ///  &lt;object&gt;
-        ///
-        ///    &lt;name&gt;enemy&lt;/name&gt;
-        ///
-        ///    &lt;x&gt;750&lt;/x&gt;
-        ///
-        ///  [rest of string was truncated]&quot;;.
+        ///    [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Level5 {
             get {

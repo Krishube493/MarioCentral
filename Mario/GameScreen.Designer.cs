@@ -42,10 +42,10 @@
             // livesLabel
             // 
             this.livesLabel.AutoSize = true;
-            this.livesLabel.Font = new System.Drawing.Font("Yu Gothic", 13F);
+            this.livesLabel.Font = new System.Drawing.Font("Segoe Print", 15.2F, System.Drawing.FontStyle.Bold);
             this.livesLabel.Location = new System.Drawing.Point(1339, 27);
             this.livesLabel.Name = "livesLabel";
-            this.livesLabel.Size = new System.Drawing.Size(66, 29);
+            this.livesLabel.Size = new System.Drawing.Size(81, 46);
             this.livesLabel.TabIndex = 1;
             this.livesLabel.Text = "Lives";
             // 

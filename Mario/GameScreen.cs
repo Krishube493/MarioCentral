@@ -435,6 +435,11 @@ namespace Mario
             }
 
             livesLabel.Text = lives + " Lives";
+
+            //draw clouds
+            e.Graphics.DrawImage(Properties.Resources.clouds, 75, 15, 75, 50);
+            e.Graphics.DrawImage(Properties.Resources.clouds, 505, 34, 75, 50);
+            e.Graphics.DrawImage(Properties.Resources.cloud, 900, 10, 50, 50);
         }
     }
 }

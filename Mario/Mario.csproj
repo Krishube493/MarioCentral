@@ -121,43 +121,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Cloud3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Coin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EndingFlagBlack.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Enemy.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Flower.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ground.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Life+.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Platform.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\QuestionBox.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\redM.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Run.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Standing.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Turned.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Level1.xml">
@@ -207,6 +177,12 @@
     <None Include="Resources\Level5.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clouds.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
