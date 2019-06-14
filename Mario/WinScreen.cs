@@ -36,5 +36,25 @@ namespace Mario
             gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
             gs.Focus();
         }
+
+        private void PlayAgainButton_Enter(object sender, EventArgs e)
+        {
+            playAgainButton.FlatAppearance.BorderSize = 3;
+        }
+
+        private void PlayAgainButton_Leave(object sender, EventArgs e)
+        {
+            playAgainButton.FlatAppearance.BorderSize = 0;
+        }
+
+        private void ExitButton_Enter(object sender, EventArgs e)
+        {
+            exitButton.FlatAppearance.BorderSize = 3;
+        }
+
+        private void ExitButton_Leave(object sender, EventArgs e)
+        {
+            exitButton.FlatAppearance.BorderSize = 0;
+        }
     }
 }

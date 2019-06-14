@@ -46,6 +46,9 @@
             // exitButton
             // 
             this.exitButton.BackColor = System.Drawing.Color.White;
+            this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.exitButton.FlatAppearance.BorderSize = 0;
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.Location = new System.Drawing.Point(322, 191);
             this.exitButton.Name = "exitButton";
@@ -54,10 +57,15 @@
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            this.exitButton.Enter += new System.EventHandler(this.ExitButton_Enter);
+            this.exitButton.Leave += new System.EventHandler(this.ExitButton_Leave);
             // 
             // playAgainButton
             // 
             this.playAgainButton.BackColor = System.Drawing.Color.White;
+            this.playAgainButton.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.playAgainButton.FlatAppearance.BorderSize = 0;
+            this.playAgainButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playAgainButton.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playAgainButton.Location = new System.Drawing.Point(57, 191);
             this.playAgainButton.Name = "playAgainButton";
@@ -66,6 +74,8 @@
             this.playAgainButton.Text = "Play Again";
             this.playAgainButton.UseVisualStyleBackColor = false;
             this.playAgainButton.Click += new System.EventHandler(this.PlayAgainButton_Click);
+            this.playAgainButton.Enter += new System.EventHandler(this.PlayAgainButton_Enter);
+            this.playAgainButton.Leave += new System.EventHandler(this.PlayAgainButton_Leave);
             // 
             // WinScreen
             // 

@@ -40,7 +40,7 @@ namespace Mario
 
         private void ExitButton_Enter(object sender, EventArgs e)
         {
-            exitButton.FlatAppearance.BorderSize = 4;
+            exitButton.FlatAppearance.BorderSize = 3;
         }
 
         private void ExitButton_Leave(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace Mario
 
         private void StartButton_Enter(object sender, EventArgs e)
         {
-            startButton.FlatAppearance.BorderSize = 4;
+            startButton.FlatAppearance.BorderSize = 3;
         }
 
         private void StartButton_Leave(object sender, EventArgs e)

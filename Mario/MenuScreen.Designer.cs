@@ -71,12 +71,11 @@
             // TitleLabel
             // 
             this.TitleLabel.AutoSize = true;
-            this.TitleLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TitleLabel.Font = new System.Drawing.Font("Ink Free", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitleLabel.Font = new System.Drawing.Font("Ink Free", 25.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TitleLabel.ForeColor = System.Drawing.Color.White;
             this.TitleLabel.Location = new System.Drawing.Point(336, 35);
             this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(269, 51);
+            this.TitleLabel.Size = new System.Drawing.Size(286, 53);
             this.TitleLabel.TabIndex = 3;
             this.TitleLabel.Text = "Mario Central";
             // 
