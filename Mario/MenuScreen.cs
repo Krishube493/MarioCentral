@@ -15,6 +15,7 @@ namespace Mario
         public MenuScreen()
         {
             InitializeComponent();
+            outputLabel.Text += " \n Right Arrow to Move Right \n Left Arrow to Move Left \n Up Arrow or Space to Jump Forward";
         }
 
         private void StartButton_Click(object sender, EventArgs e)
