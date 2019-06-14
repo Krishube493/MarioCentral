@@ -15,7 +15,7 @@ namespace Mario
         public MenuScreen()
         {
             InitializeComponent();
-            outputLabel.Text += " \n Right Arrow to Move Right \n Left Arrow to Move Left \n Up Arrow or Space to Jump Forward";
+            outputLabel.Text += " \n \n Right Arrow to Move Right \n Left Arrow to Move Left \n Up Arrow or Space to Jump Forward";
         }
 
         private void StartButton_Click(object sender, EventArgs e)
@@ -36,6 +36,26 @@ namespace Mario
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ExitButton_Enter(object sender, EventArgs e)
+        {
+            exitButton.FlatAppearance.BorderSize = 4;
+        }
+
+        private void ExitButton_Leave(object sender, EventArgs e)
+        {
+            exitButton.FlatAppearance.BorderSize = 0;
+        }
+
+        private void StartButton_Enter(object sender, EventArgs e)
+        {
+            startButton.FlatAppearance.BorderSize = 4;
+        }
+
+        private void StartButton_Leave(object sender, EventArgs e)
+        {
+            startButton.FlatAppearance.BorderSize = 0;
         }
     }
 }
