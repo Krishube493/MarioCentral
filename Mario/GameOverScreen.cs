@@ -36,5 +36,25 @@ namespace Mario
         {
             Application.Exit();
         }
+
+        private void TryAgainButton_Enter(object sender, EventArgs e)
+        {
+            tryAgainButton.FlatAppearance.BorderSize = 4;
+        }
+
+        private void TryAgainButton_Leave(object sender, EventArgs e)
+        {
+            tryAgainButton.FlatAppearance.BorderSize = 0;
+        }
+
+        private void ExitButton_Enter(object sender, EventArgs e)
+        {
+            exitButton.FlatAppearance.BorderSize = 4;
+        }
+
+        private void ExitButton_Leave(object sender, EventArgs e)
+        {
+            exitButton.FlatAppearance.BorderSize = 0;
+        }
     }
 }

@@ -46,6 +46,9 @@
             // exitButton
             // 
             this.exitButton.BackColor = System.Drawing.Color.White;
+            this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.exitButton.FlatAppearance.BorderSize = 0;
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.Location = new System.Drawing.Point(322, 191);
             this.exitButton.Name = "exitButton";
@@ -54,10 +57,15 @@
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            this.exitButton.Enter += new System.EventHandler(this.ExitButton_Enter);
+            this.exitButton.Leave += new System.EventHandler(this.ExitButton_Leave);
             // 
             // tryAgainButton
             // 
             this.tryAgainButton.BackColor = System.Drawing.Color.White;
+            this.tryAgainButton.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.tryAgainButton.FlatAppearance.BorderSize = 0;
+            this.tryAgainButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tryAgainButton.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tryAgainButton.Location = new System.Drawing.Point(57, 191);
             this.tryAgainButton.Name = "tryAgainButton";
@@ -66,6 +74,8 @@
             this.tryAgainButton.Text = "Try Again";
             this.tryAgainButton.UseVisualStyleBackColor = false;
             this.tryAgainButton.Click += new System.EventHandler(this.TryAgainButton_Click);
+            this.tryAgainButton.Enter += new System.EventHandler(this.TryAgainButton_Enter);
+            this.tryAgainButton.Leave += new System.EventHandler(this.TryAgainButton_Leave);
             // 
             // GameOverScreen
             // 
